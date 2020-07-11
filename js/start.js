@@ -14,6 +14,7 @@
 /**         Variáveis         */
 {
     var x = 5, y = 70;
+    var math = somar();
 
 }
 
@@ -30,16 +31,19 @@ apresentarNome();
 function somar() {
     let soma;
     soma = x + y;
-    console.log(`O valor é: ${soma}`);
-    
+    return soma;
+
 }
-somar();
+
+function valor() {
+    math += 2;
+    console.log(`O valor da soma é: ${math}`)
+}
+valor();
 
 let f; /* Utilizando o Use Strict é necessário criar a variável F */
 f = () => {
-    console.log("Arrow Function");
+    math *= 5;
+    console.log(`O valor da multiplicalçai é de ${math}`)
 }
 f();
-
-
-
